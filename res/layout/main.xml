@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_vertical"
+        >
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/main_tittle"
+            android:textSize="@dimen/main_text_size_tittle"
+            android:layout_margin="@dimen/main_margin"
+            />
+    <Button
+            android:layout_width="@dimen/main_size_width_button"
+            android:layout_height="@dimen/main_size_height_button"
+            android:text="@string/main_text_button_database"
+            android:textColor="@color/White"
+            android:id="@+id/main_btDatabase" android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_background"
+            android:layout_marginTop="@dimen/main_margin"/>
+    <Button
+            android:layout_width="@dimen/main_size_width_button"
+            android:layout_height="@dimen/main_size_height_button"
+            android:text="@string/main_text_button_sharedprefrence"
+            android:textColor="@color/White"
+            android:id="@+id/main_btSharedPrefrence" android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_background"
+            android:layout_marginTop="@dimen/main_margin"/>
+    <Button
+            android:layout_width="@dimen/main_size_width_button"
+            android:layout_height="@dimen/main_size_height_button"
+            android:text="@string/main_text_button_externalstorage"
+            android:textColor="@color/White"
+            android:id="@+id/main_btExternalStorage" android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_background"
+            android:layout_marginTop="@dimen/main_margin"/>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom|center_horizontal"
+            android:text="@string/main_footer"
+            android:textSize="@dimen/main_text_size_footer"
+            android:layout_margin="@dimen/main_margin"
+            />
+</LinearLayout>
+

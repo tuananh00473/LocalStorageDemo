@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <Button
+            android:id="@+id/dialog_load_btCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_text_button_cancel"
+            android:textSize="@dimen/dialog_size_text"
+            android:layout_marginLeft="@dimen/dialog_margin"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_load_input_tittle"
+            android:textSize="@dimen/dialog_size_text"
+            android:layout_margin="@dimen/dialog_margin"/>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <Button
+                android:id="@+id/dialog_load_btLoadFile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dialog_load_text_button_load"
+                android:textSize="@dimen/dialog_size_text"
+                android:layout_alignParentRight="true" android:layout_marginRight="@dimen/dialog_margin"/>
+        <EditText
+                android:id="@+id/dialog_load_etFileName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true" android:layout_marginLeft="@dimen/dialog_margin"
+                android:layout_toLeftOf="@id/dialog_load_btLoadFile"
+                android:textSize="@dimen/dialog_size_text"
+                android:inputType="text"/>
+    </RelativeLayout>
+    <EditText
+            android:id="@+id/dialog_load_etOutput"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dialog_margin"
+            android:editable="false"
+            android:textSize="@dimen/dialog_size_text"
+            android:inputType="none"/>
+</LinearLayout>

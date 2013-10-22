@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <Button
+            android:id="@+id/external_storage_btWriteXML"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/external_storage_button_write_xml_file_to_SDcard"
+            android:gravity="center_horizontal"/>
+    <Button
+            android:id="@+id/external_storage_btLoadXML"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/external_storage_button_load_xml_file_from_SDcard"
+            android:gravity="center_horizontal"/>
+    <Button
+            android:id="@+id/external_storage_btWriteText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/external_storage_button_write_text_file_to_SDcard"
+            android:gravity="center_horizontal"/>
+    <Button
+            android:id="@+id/external_storage_btLoadText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/external_storage_button_load_text_file_from_SDcard"
+            android:gravity="center_horizontal"/>
+</LinearLayout>

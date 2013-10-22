@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LocalStorageDemo</string>
+    <string name="main_tittle">LOCAL STORAGE DEMO</string>
+    <string name="main_text_button_database">Database demo</string>
+    <string name="main_text_button_sharedprefrence">Shared preference</string>
+    <string name="main_text_button_externalstorage">External storage</string>
+    <string name="main_footer">//==== ANHNT ====\\</string>
+    <string name="shared_preference_tittle">Input some text</string>
+    <string name="shared_preference_input_hint">input some text</string>
+    <string name="external_storage_button_write_xml_file_to_SDcard">Write XMLfile to SDcard</string>
+    <string name="external_storage_button_load_xml_file_from_SDcard">Load XMLfile from SDcard</string>
+    <string name="external_storage_button_write_text_file_to_SDcard">Write TXTfile to SDcard</string>
+    <string name="external_storage_button_load_text_file_from_SDcard">Load TXTfile from SDcard</string>
+    <string name="dialog_write_text_tittle_input">Input your text :</string>
+    <string name="dialog_write_text_tittle_file_name">Input file name :</string>
+    <string name="dialog_write_text_button_submit">WRITE</string>
+    <string name="dialog_text_button_cancel">CANCEL</string>
+    <string name="dialog_load_input_tittle">Input file name :</string>
+    <string name="dialog_load_text_button_load">LOAD</string>
+</resources>

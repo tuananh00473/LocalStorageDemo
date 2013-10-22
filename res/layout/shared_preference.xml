@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shared_preference_tittle"
+            android:textSize="@dimen/shared_preference_size_tittle"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/shared_preference_margin"/>
+    <EditText
+            android:id="@+id/shared_preference_etInputText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/shared_preference_input_hint"
+            android:textSize="@dimen/shared_prefrence_size_text"
+            android:layout_margin="@dimen/shared_preference_margin"/>
+
+</LinearLayout>
