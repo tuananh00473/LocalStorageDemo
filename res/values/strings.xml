@@ -18,4 +18,12 @@
     <string name="dialog_text_button_cancel">CANCEL</string>
     <string name="dialog_load_input_tittle">Input file name :</string>
     <string name="dialog_load_text_button_load">LOAD</string>
+    <string name="sqlite_text_button_add">ADD</string>
+    <string name="sqlite_tittle_student_id">Student ID :</string>
+    <string name="sqlite_student_id">0912040269</string>
+    <string name="sqlite_tittle_student_name">Name :</string>
+    <string name="sqlite_student_name">Anh NT</string>
+    <string name="sqlite_tittle_student_age">Age :</string>
+    <string name="sqlite_student_age">22</string>
+    <string name="sqlite_text_button_back">BACK</string>
 </resources>

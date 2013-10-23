@@ -22,11 +22,15 @@ public class MyDialog
 {
     private static Activity activity;
     private static Dialog dialog;
+
     private static TextView tvTittle;
     private static EditText etContent;
     private static EditText etFileName;
+
     private static Button btSubmit;
     private static Button btCancel;
+
+
     private static File root = android.os.Environment.getExternalStorageDirectory();
     private static View.OnClickListener onViewClickListener = new View.OnClickListener()
     {
@@ -73,7 +77,6 @@ public class MyDialog
             }
         }
     };
-
 
     public static void showDialogWriteText(Activity act, String tittle)
     {

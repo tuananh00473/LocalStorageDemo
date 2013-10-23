@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <Button
+            android:id="@+id/sqlite_btBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sqlite_text_button_back"
+            android:textSize="@dimen/sqlite_size_text"
+            android:layout_margin="@dimen/sqlite_margin"/>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <Button
+                android:id="@+id/sqlite_btAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sqlite_text_button_add"
+                android:textSize="@dimen/sqlite_size_text"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/sqlite_margin_item"/>
+        <EditText
+                android:id="@+id/sqlite_etStudentName"
+                android:layout_width="@dimen/sqlite_width_field_name"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:singleLine="true"
+                android:textSize="@dimen/sqlite_size_text"
+                android:layout_margin="@dimen/sqlite_margin_item"/>
+        <EditText
+                android:id="@+id/sqlite_etStudentAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textSize="@dimen/sqlite_size_text"
+                android:layout_toRightOf="@id/sqlite_etStudentName"
+                android:layout_toLeftOf="@id/sqlite_btAdd"
+                android:layout_margin="@dimen/sqlite_margin_item"/>
+
+    </RelativeLayout>
+    <ListView
+            android:id="@+id/sqlite_lvStudenList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"/>
+
+</LinearLayout>

@@ -22,5 +22,8 @@
         <activity android:name=".activity.ExternalStorageActivity"
                   android:theme="@android:style/Theme.NoTitleBar"
                   android:screenOrientation="portrait"/>
+        <activity android:name=".activity.SQLiteActivity"
+                  android:theme="@android:style/Theme.NoTitleBar"
+                  android:screenOrientation="portrait"/>
     </application>
 </manifest>
