@@ -122,6 +122,32 @@ public class MyDialog
         btCancel = (Button) dialog.findViewById(R.id.dialog_load_btCancel);
     }
 
+    public void showConfirmDialog(Activity act, String tittle, String message)
+    {
+        activity = act;
+        final int[] result = null;
+        AlertDialog.Builder alertDialog2 = new AlertDialog.Builder(activity);
+        alertDialog2.setTitle(tittle);
+        alertDialog2.setMessage(message);
+        alertDialog2.setPositiveButton("OK", new DialogInterface.OnClickListener()
+        {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i)
+            {
+                result[0] = 1;
+            }
+        });
+        alertDialog2.setNegativeButton("CANCEL", new DialogInterface.OnClickListener()
+        {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i)
+            {
+                result[0] = 0;
+            }
+        });
+        alertDialog2.show();
+    }
+
     public static void showMessageDialog(Activity act, String tittle, String message)
     {
         activity = act;

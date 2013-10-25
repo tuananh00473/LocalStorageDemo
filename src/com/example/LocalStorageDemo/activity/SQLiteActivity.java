@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
@@ -45,6 +46,14 @@ public class SQLiteActivity extends Activity
             }
         }
     };
+    private AdapterView.OnItemClickListener onItemClickListener = new AdapterView.OnItemClickListener()
+    {
+        @Override
+        public void onItemClick(AdapterView<?> adapterView, View view, int i, long l)
+        {
+            initStudentList();
+        }
+    };
 
     private void doBack()
     {
@@ -82,6 +91,7 @@ public class SQLiteActivity extends Activity
     {
         btAdd.setOnClickListener(onClickListener);
         btBack.setOnClickListener(onClickListener);
+        lvStudentList.setOnItemClickListener(onItemClickListener);
     }
 
     private void setUpUI()

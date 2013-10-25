@@ -22,22 +22,6 @@ public class ListArrayAdapter extends ArrayAdapter<Student>
     private Context context;
     private ArrayList<Student> students;
     private DatabaseHandler databaseHandler;
-    private View.OnClickListener onClickListener = new View.OnClickListener()
-    {
-        @Override
-        public void onClick(View view)
-        {
-            switch (view.getId())
-            {
-                case R.id.sqlite_btEdit:
-
-                    break;
-                case R.id.sqlite_btDelete:
-//                    databaseHandler.delete((Student) view.getTag());
-                    break;
-            }
-        }
-    };
 
     public ListArrayAdapter(Context context, int textViewResourceId, ArrayList<Student> students)
     {
@@ -68,9 +52,37 @@ public class ListArrayAdapter extends ArrayAdapter<Student>
         Button btEdit = (Button) convertView.findViewById(R.id.sqlite_btEdit);
         Button btDelete = (Button) convertView.findViewById(R.id.sqlite_btDelete);
 
+        MyOnClickListener onClickListener = new MyOnClickListener(position);
+
         btEdit.setOnClickListener(onClickListener);
         btDelete.setOnClickListener(onClickListener);
 
         return convertView;
+    }
+
+    private class MyOnClickListener implements View.OnClickListener
+    {
+        private int position;
+
+        private MyOnClickListener(int position)
+        {
+            this.position = position;
+        }
+
+        @Override
+        public void onClick(View view)
+        {
+            switch (view.getId())
+            {
+                case R.id.sqlite_btEdit:
+
+                    break;
+                case R.id.sqlite_btDelete:
+                    databaseHandler.delete(students.get(position));
+                    students.remove(position);
+                    notifyDataSetChanged();
+                    break;
+            }
+        }
     }
 }
